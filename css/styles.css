@@ -53,7 +53,5 @@ ul{
 }
 
 @media (max-width: 576px){
-	*{
-		background: red;
-	}
+	/* for later */
 }
