@@ -3,42 +3,82 @@
 <head>
 	<title>UI Excercise</title>
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<script type="text/javascript" href="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
-	<script type="text/javascript" href=""></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
 </head>
 <body>
+	<div class="app-wrapper">
 
-	<header>
-			<h1>UI Excercise</h1>
-		<nav>
-			<a href="#">Home</a> / 
-			<a href="#">About</a> / 
-			<a href="#">Blog</a> / 
-		</nav>
-	</header>
+		<header>
+				<h1>UI Excercise</h1>
+			<nav>
+				<a href="#">Home</a> / 
+				<a href="#">About</a> / 
+				<a href="#">Blog</a> / 
+				<a href="#" id="sidebar-btn">Sidebar</a>
+			</nav>
+		</header>
 
-	<div class="main-content">
+		<div class="main-content">
 
-		<section class="main-content-inner">
-			<h2>Main Conent</h2>
-			<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-		</section>
+			<section class="main-content-inner">
 
-		<aside class="sidebar">
-			<h2>sidebar</h2>
-			<ul>
-				<li>This</li>
-				<li>is</li>
-				<li>the</li>
-				<li>sidebar</li>
-			</ul>
-		</aside>
+				<h2>Main Conent</h2>
 
+				<div class="row">
+					<div class="one-third">
+						<img src="images/img1.jpg" />
+						<h3>Vlisco</h3>
+						<p>E-commerce with a colourful story</p>
+					</div>
+					<div class="one-third">
+						<img src="images/img2.jpg" />
+						<h3>Copenhagen Airports</h3>
+						<p>Knowing your customer in the digital age</p>
+					</div>
+					<div class="one-third">
+						<img src="images/img3.jpg" />
+						<h3>TV-4 Play</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="one-third">
+						<img src="images/img4.jpg" />
+						<h3>Vlisco</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+					</div>
+					<div class="one-third">
+						<img src="images/img5.jpg" />
+						<h3>Vlisco</h3>
+						<p>Lorem ipsum dolor sit amet.</p>
+					</div>
+					<div class="one-third">
+						<img src="images/img6.jpg" />
+						<h3>Vlisco</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+					</div>
+				</div>
+
+			</section>
+
+			<aside class="sidebar" id="the-sidebar">
+				<h2>sidebar</h2>
+				<ul>
+					<li>This</li>
+					<li>is</li>
+					<li>the</li>
+					<li>sidebar</li>
+				</ul>
+			</aside>
+
+		</div>
+
+		<footer>
+			<h2>Footer</h2>
+		</footer>
+		
 	</div>
-
-	<footer>
-		<h2>Footer</h2>
-	</footer>
-
 </body>
 </html>

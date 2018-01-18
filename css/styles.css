@@ -3,7 +3,7 @@
 html{
 	font-size: 16px;
 	font-family: helvetica;
-	color: #6d6d6d;
+	color: #909090;
 }
 body{
 	margin: 0;	
@@ -13,6 +13,12 @@ header, footer{
 	display: inline-block;
 	width: 100%;
 	padding: 1.5rem;
+	box-sizing: border-box;
+}
+.app-wrapper{
+  max-width: 1750px;
+  overflow: hidden;
+  margin: 0 auto;
 }
 .main-content-inner, .sidebar{
 	padding: 1.5rem;
@@ -20,14 +26,33 @@ header, footer{
 	-moz-box-sizing: border-box;    
 	box-sizing: border-box; 
 }
+.main-content{
+	position: relative;
+}
 .main-content-inner{
 	display: inline-block;
-	width: 70%;
-	float: left;
+	width: 100%;
 }
 .sidebar{
-	float: left;
+	background-color: #f9f9f9;
+	position: absolute;
+	height: 100%;
 	width: 30%;
+	top: 0;
+	right: -30%;
+}
+.row{
+	float: left;
+	width: 100%;
+	margin-bottom: 1.5rem;
+}
+.one-third{
+  float: left;
+	width: 31%;
+	margin: 0 1%;
+}
+img{
+	max-width: 100%;
 }
 
 /* TYPE */
@@ -52,6 +77,15 @@ ul{
 	padding-left: 1.25rem;
 }
 
-@media (max-width: 576px){
-	/* for later */
+@media (max-width: 768px){
+	.sidebar{
+		width: 80%;
+		right: -80%;
+	}
+	.one-third{
+		width: 100%;
+	}
+	.one-third img{
+		width: 100%;
+	}
 }
